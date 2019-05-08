@@ -1,0 +1,22 @@
+download busybox
+
+make menuconfig   #Build static binary (no shared libs)
+
+make
+
+make install # create _install directory
+
+
+copy _install to kernel and make kernel
+
+
+make menuconfig
+
+#Initramfs source file(s)
+
+#Built-in kernel command line  rdinit=/linuxrc console=ttyAMA0 loglevel=8 
+
+#disable Randomize the address of the kernel image
+
+
+make bzImage
