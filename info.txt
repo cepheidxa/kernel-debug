@@ -1,3 +1,7 @@
+
+git config --global user.email 
+git config --global user.name 
+
 download busybox
 
 make menuconfig   #Build static binary (no shared libs)
